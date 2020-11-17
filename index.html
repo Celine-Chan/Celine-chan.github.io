@@ -16,7 +16,7 @@
 
             <div class="screenCalculator">
                 <div class="border border-secondary">
-                    <p></p>
+                    <p id="firstNumber"></p>
                 </div>
             </div>
 
@@ -29,35 +29,35 @@
             <div class="numberCalculator mx-auto mt-5 mb-5">
 
                 <div class="btn-group btn-group-lg col-3" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3"  onclick="nineNumber()" id="nine">9</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="eightNumber()" id="eight">8</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="nineNumber()">9</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="eightNumber()">8</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="sevenNumber()">7</button>
-                    <button type="button" class="btn btn-warning rounded-circle" onclick="addbutton()">+</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="addNumber()">+</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mt-3" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">6</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">5</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">4</button>
-                    <button type="button" class="btn btn-warning rounded-circle" id="multiplicateNumber">x</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="sixNumber()">6</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="fiveNumber()">5</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="fourNumber()">4</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="multiplicateNumber()">x</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mt-3" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">3</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">2</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">1</button>
-                    <button type="button" class="btn btn-warning rounded-circle">-</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="threeNumber()">3</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="twoNumber()">2</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="oneNumber()">1</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="minusNumber()">-</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mt-3" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">C</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3">0</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3 pr-4 pl-3">.</button>
-                    <button type="button" class="btn btn-warning rounded-circle">/</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="cancelNumber()">C</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="zeroNumber()">0</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3 pr-4 pl-3" onclick="dotNumber()">.</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="splitNumber()">/</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mx-auto" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-danger rounded-circle mt-3 pr-5 pl-5">=</button>
+                    <button type="button" class="btn btn-danger rounded-circle mt-3 pr-5 pl-5" onclick="equalNumber()">=</button>
 
                 </div>
 
