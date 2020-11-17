@@ -44,7 +44,6 @@ function addNumber() {
     showNumberOne.innerHTML += "+";
 };
 
-
 function multiplicateNumber() {
     showNumberOne.innerHTML += "x";
 };
