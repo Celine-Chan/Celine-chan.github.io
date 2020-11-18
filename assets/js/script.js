@@ -1,20 +1,33 @@
 // affiche sur le 1er écran (l'addition/multiplication...)
-const showNumberOne = document.getElementById("firstNumber");
+// const showNumberOne = document.getElementById("firstNumber");
+const firstBlock = document.getElementById("firstBlock");
+const secondBlock = document.getElementById("secondBlock");
+const thirdBlock = document.getElementById("thirdBlock");
+const fourthBlock = document.getElementById("fourthBlock");
+
+let block = firstBlock;
 
 // affiche le 2eme écran (le résultat)
-const showNumberTwo = document.getElementById("secondNumber");
+// const showNumberTwo = document.getElementById("secondNumber");
+const result = document.getElementById("result");
 
 // pour les paramètres de la fonction comme "number"
 let calculString = "";
 
 // affiche les nombres sur le 1er écran
 function addNumber(number) {
-    showNumberOne.innerHTML += number;
+    block.innerHTML += number;
 }
 
 // affiche les symboles mathématiques
 function addSymbol(operator) {
-    showNumberOne.innerHTML += operator;
+    secondBlock.innerHTML = operator;
+    block = thirdBlock;
+}
+
+function showResult() {
+    fourthBlock.innerHTML = "=";
+    result.innerHTML = parseInt(firstBlock.textContent) + parseInt(thirdBlock.textContent);
 }
 
 
