@@ -6,6 +6,8 @@ const fourthBlock = document.getElementById("fourthBlock");
 
 let block = firstBlock;
 
+// const firstNumber = document.getElementById("firstNumber");
+
 // affiche le 2eme écran (le résultat)
 const result = document.getElementById("result");
 
@@ -38,6 +40,15 @@ function showResult() {
     if (secondBlock.textContent == "-") {
         result.innerHTML = parseInt(firstBlock.textContent) - parseInt(thirdBlock.textContent);
     }
+};
+
+function reset() {
+    firstBlock.innerHTML = "";
+    secondBlock.innerHTML = "";
+    thirdBlock.innerHTML = "";
+    fourthBlock.innerHTML = "";
+    result.innerHTML = "";
+    block = firstBlock;
 };
 
 
