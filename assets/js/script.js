@@ -1,5 +1,4 @@
 // affiche sur le 1er écran (l'addition/multiplication...)
-// const showNumberOne = document.getElementById("firstNumber");
 const firstBlock = document.getElementById("firstBlock");
 const secondBlock = document.getElementById("secondBlock");
 const thirdBlock = document.getElementById("thirdBlock");
@@ -8,7 +7,6 @@ const fourthBlock = document.getElementById("fourthBlock");
 let block = firstBlock;
 
 // affiche le 2eme écran (le résultat)
-// const showNumberTwo = document.getElementById("secondNumber");
 const result = document.getElementById("result");
 
 // pour les paramètres de la fonction comme "number"
@@ -27,8 +25,20 @@ function addSymbol(operator) {
 
 function showResult() {
     fourthBlock.innerHTML = "=";
-    result.innerHTML = parseInt(firstBlock.textContent) + parseInt(thirdBlock.textContent);
-}
+    console.log(secondBlock.textContent);
+    if (secondBlock.textContent == "+") {
+        result.innerHTML = parseInt(firstBlock.textContent) + parseInt(thirdBlock.textContent);
+    } 
+    if (secondBlock.textContent == "x") {
+        result.innerHTML = parseInt(firstBlock.textContent) * parseInt(thirdBlock.textContent);
+    }
+    if (secondBlock.textContent == "/") {
+        result.innerHTML = parseInt(firstBlock.textContent) / parseInt(thirdBlock.textContent);
+    }
+    if (secondBlock.textContent == "-") {
+        result.innerHTML = parseInt(firstBlock.textContent) - parseInt(thirdBlock.textContent);
+    }
+};
 
 
 
