@@ -16,13 +16,20 @@
 
             <div class="screenCalculator">
                 <div class="border border-secondary">
-                    <p id="firstNumber"></p>
+                    <p id="firstNumber">
+                        <span id="firstBlock"></span>
+                        <span id="secondBlock"></span>
+                        <span id="thirdBlock"></span>
+                        <span id="fourthBlock"></span>
+                    </p>
                 </div>
             </div>
 
             <div class="resultCalculator">
                 <div class="border border-dark">
-                    <p id="secondNumber"></p>
+                    <p id="secondNumber">
+                        <span id="result"></span>
+                    </p>
                 </div>
             </div>
 
@@ -32,32 +39,32 @@
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(9)">9</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(8)">8</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(7)">7</button>
-                    <button type="button" class="btn btn-warning rounded-circle" onclick="mathSymbol(+)">+</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="addSymbol('+')">+</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mt-3" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(6)">6</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(5)">5</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(4)">4</button>
-                    <button type="button" class="btn btn-warning rounded-circle" onclick="mathSymbol(*)">x</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="addSymbol('x')">x</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mt-3" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(3)">3</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(2)">2</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(1)">1</button>
-                    <button type="button" class="btn btn-warning rounded-circle" onclick="mathSymbol(-)">-</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="addSymbol('-')">-</button>
                 </div>
 
                 <div class="btn-group btn-group-lg col-3 mt-3" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-dark rounded-circle mr-3" onclick="cancelNumber()">C</button>
                     <button type="button" class="btn btn-secondary rounded-circle mr-3" onclick="addNumber(0)">0</button>
-                    <button type="button" class="btn btn-secondary rounded-circle mr-3 pr-4 pl-3" onclick="dotNumber()">.</button>
-                    <button type="button" class="btn btn-warning rounded-circle" onclick="mathSymbol(/)">/</button>
+                    <button type="button" class="btn btn-secondary rounded-circle mr-3 pr-4 pl-3" onclick="dotSymbol()">.</button>
+                    <button type="button" class="btn btn-warning rounded-circle" onclick="addSymbol('/')">/</button>
                 </div>
 
                 <!-- <div class="btn-group btn-group-lg col-3 mx-auto" role="group" aria-label="Basic example"> -->
-                    <button type="button" class="btn btn-danger rounded-circle mt-3 pr-5 pl-5" onclick="mathSymbol(=)">=</button>
+                    <button type="button" class="btn btn-danger rounded-circle mt-3 pr-5 pl-5" onclick="addSymbol('=')">=</button>
 
                 </div>
 

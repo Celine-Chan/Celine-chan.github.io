@@ -1,17 +1,21 @@
+// affiche sur le 1er écran (l'addition/multiplication...)
 const showNumberOne = document.getElementById("firstNumber");
+
+// affiche le 2eme écran (le résultat)
 const showNumberTwo = document.getElementById("secondNumber");
+
+// pour les paramètres de la fonction comme "number"
 let calculString = "";
 
+// affiche les nombres sur le 1er écran
 function addNumber(number) {
     showNumberOne.innerHTML += number;
 }
 
-
-
-
-
-
-
+// affiche les symboles mathématiques
+function addSymbol(operator) {
+    showNumberOne.innerHTML += operator;
+}
 
 
 
