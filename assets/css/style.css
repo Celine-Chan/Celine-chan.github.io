@@ -24,3 +24,11 @@
 .btn-success{
     size: 20rem;
 }
+
+#firstNumber{
+    font-size: 2rem;
+}
+
+#secondNumber{
+    font-size: 5rem;
+}
