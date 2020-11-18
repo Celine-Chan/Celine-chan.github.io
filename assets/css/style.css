@@ -13,12 +13,12 @@
 
 .border-secondary{
     height: 7rem;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(247, 245, 245);
 }
 
 .border-dark{
     height: 8rem;
-    background-color: rgb(216, 216, 215);
+    background-color: rgb(231, 231, 230);
 }
 
 .btn-success{
