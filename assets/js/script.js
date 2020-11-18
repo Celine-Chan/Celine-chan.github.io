@@ -6,8 +6,6 @@ const fourthBlock = document.getElementById("fourthBlock");
 
 let block = firstBlock;
 
-// const firstNumber = document.getElementById("firstNumber");
-
 // affiche le 2eme écran (le résultat)
 const result = document.getElementById("result");
 
@@ -29,19 +27,21 @@ function showResult() {
     fourthBlock.innerHTML = "=";
     console.log(secondBlock.textContent);
     if (secondBlock.textContent == "+") {
-        result.innerHTML = parseInt(firstBlock.textContent) + parseInt(thirdBlock.textContent);
+        console.log(parseFloat(firstBlock.textContent));
+        result.innerHTML = parseFloat(firstBlock.textContent) + parseFloat(thirdBlock.textContent);
     } 
     if (secondBlock.textContent == "x") {
-        result.innerHTML = parseInt(firstBlock.textContent) * parseInt(thirdBlock.textContent);
+        result.innerHTML = parseFloat(firstBlock.textContent) * parseFloat(thirdBlock.textContent);
     }
     if (secondBlock.textContent == "/") {
-        result.innerHTML = parseInt(firstBlock.textContent) / parseInt(thirdBlock.textContent);
+        result.innerHTML = parseFloat(firstBlock.textContent) / parseFloat(thirdBlock.textContent);
     }
     if (secondBlock.textContent == "-") {
-        result.innerHTML = parseInt(firstBlock.textContent) - parseInt(thirdBlock.textContent);
+        result.innerHTML = parseFloat(firstBlock.textContent) - parseFloat(thirdBlock.textContent);
     }
 };
 
+// bouton cancel
 function reset() {
     firstBlock.innerHTML = "";
     secondBlock.innerHTML = "";
@@ -50,6 +50,11 @@ function reset() {
     result.innerHTML = "";
     block = firstBlock;
 };
+
+// bouton virgule
+function dotSymbol(dotElement) {
+    block.innerHTML += dotElement;
+}
 
 
 
